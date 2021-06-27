@@ -1,0 +1,174 @@
+.container,
+.container--css-variables {
+  position: relative;
+}
+.container {
+  height: 296px;
+  margin-top: 48px;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 1144px;
+}
+
+.header-padding {
+    box-sizing: border-box;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+header {
+  height: 100px;
+  width: 1144px;
+}
+
+h2 {
+  font-family: Kanit, serif;
+  margin: 8px 0px;
+}
+html {
+  margin-left: 146px;
+  margin-right: 146px;
+  background-color: #fff;
+}
+.rocket {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 16px;
+  top: 64px;
+  font-size: 48px;
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  font-size: 200%;
+}
+
+.optimizing-css {
+  position: absolute;
+  width: 434px;
+  height: 96px;
+  left: 16px;
+  top: 136px;
+  font-family: Playfair Display, serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.border {
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+}
+
+.img-optimization-css {
+  width: 500px;
+  height: 280px;
+  float: left;
+  box-sizing: content-box;
+}
+
+.img-wh {
+  width: 330px;
+  height: 200px;
+}
+
+.social {
+  float: right;
+  margin-top: 30px;
+}
+.position {
+  box-sizing: border-box;
+  width: 350px;
+  height: 402px;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* .position-center-block {
+  margin-left: 43px;
+  margin-right: 43px;
+} */
+
+.first-card{
+    margin-right: 43px;
+}
+
+.last-card{
+    float: right;
+}
+.position-thee-card{
+    margin-top: 52px;  
+    width: 1144px;
+}
+
+.front-end-big {
+  font-weight: 700;
+}
+
+.read-full {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-family: Roboto, serif;
+}
+
+.time_ago {
+  color: #6e6e6e;
+}
+
+.text {
+  font-size: 12px;
+  font-family: Roboto, serif;
+  font-weight: 400;
+  line-height: 14px;
+  color: #6e6e6e;
+  margin: 0;
+}
+
+.text-big {
+  display: flex;
+  padding-left: 16px;
+}
+
+.front-end-small {
+  font-weight: 500;
+  display: flex;
+}
+
+.front-end {
+  font-family: "Playfair Display", serif;
+  color: #4b4b4b;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+.position-read-full-big {
+  float: right;
+  margin-top: 90px;
+}
+
+.position-read-full {
+  float: right;
+  margin-top: 40px;
+}
+
+.position-time-ago-big {
+  display: inline-block;
+  margin-top: 90px;
+  margin-left: 16px;
+}
+
+.position-time-ago {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.dot{
+    display: block;
+    margin-top: -3.5px;
+    font-weight: 700;
+    color:#6E6E6E;
+}

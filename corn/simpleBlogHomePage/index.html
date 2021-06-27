@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Simple Blog Home Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Blog Home Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-padding">
+    <a href="./"><img src="./img/logo.png" alt="dasdas" height="80px" width="80px"></a>
+    <div class="social">
+      <a href="https://twitter.com/"><img src="./img/twitter.png" alt="twitter" height="24px" width="24px"></a>
+      &dot;
+      <a href="https://dribbble.com/"><img src="./img/dribbble.png" alt="dribbble" height="24px" width="24px"></a>
+      &dot;
+      <a href="https://figma.com/"><img src="./img/figma.png" alt="figma" height="24px" width="24px"></a>
+      &dot;
+      <a href="github.com"><img src="./img/github.png" alt="github" height="24px" width="24px"></a>
+    </div>
+  </header>
+  <main>
+    <div class="container border">
+      <img class="img-optimization-css" src="./img/large1.png" alt="Optimizing CSS for faster
+       page loads">
+      <div class="rocket">&#128640;</div>
+      <div class="optimizing-css">Optimizing CSS for faster
+        page loads</div>
+      <p class="front-end-big front-end text-big">Front-end <span class="dot">&#160;.&#160;</span><span
+          class="time_ago read-full"> 1 Hour Ago</span>
+      </p>
+      <h2 class="text-big">Optimizing CSS for faster page loads </h2>
+      <p class="text text-big">Not long ago I decided to improve the loading times of my website. It
+        already loads pretty fast, but I knew there was still room for improvement
+        and one of them was CSS loading. I will walk you through the process and
+        show you how you can improve your load times as well.</p>
+      <br>
+      <p class="text text-big">To see how CSS affects the load time of a webpage we first have to know
+        how the browser converts an HTML document into a functional webpage...</p>
+      <span class="time_ago read-full position-time-ago-big">3 Min Read</span>
+      <a class="read-full position-read-full-big" href="#">Read Full &#10230;</a>
+    </div>
+    <div class="position-thee-card">
+    <div class="border position first-card">
+      <img class="img-wh" src="./img/mini.png" alt="mini">
+      <p class="front-end-small front-end">Front-end<span class="dot">&#160;.&#160;</span><span
+          class="time_ago read-full">1 Month Ago</span></p>
+      <h2>Css Grid</h2>
+      <p class="text">The CSS Grid Layout Module offers a grid-based layout system, with rows
+        and columns, making it easier to design web pages without having to use
+        floats and positioning.</p>
+      <span class="time_ago read-full position-time-ago">12 Min Read</span>
+      <a class="read-full position-read-full" href="#">Read Full &#10230;</a>
+    </div>
+    <div class="border position position-center-block">
+      <img class="img-wh" src="./img/colors-in-css 1.png" alt="color in css">
+      <p class="front-end-small front-end">Front-end<span class="dot">&#160;.&#160;</span><span
+          class="time_ago read-full">2 Month Ago</span></p>
+      <h2>Colors in Css</h2>
+      <p class="text">Colors play a vital role in making a web page usable or not. In CSS, we
+        can control the foreground and background color of an element with the
+        color and background properties.</p>
+      <span class="time_ago read-full position-time-ago">8 Min Read</span>
+      <a class="read-full position-read-full" href="#">Read Full &#10230;</a>
+    </div>
+    <div class="border position last-card">
+      <img class="img-wh" src="./img/css variables.png" alt="css variables">
+      <p class="front-end-small front-end">Front-end<span class="dot">&#160;.&#160;</span><span
+          class="time_ago read-full">2 Month Ago</span></p>
+      <h2>Css Variables</h2>
+      <p class="text">CSS variables are custom properties that cascade normally and even
+        inherit. They start with a reserved -- prefix, and there are no real
+        rules about their value.</p>
+      <span class="read-full time_ago position-time-ago">10 Min Read</span>
+      <a class="read-full position-read-full" href="#">Read Full &#10230;</a>
+    </div>
+  </div>
+  </main>
+</body>
+
 </html>
