@@ -47,11 +47,11 @@
   --size-card-height: 402px;
   --first-card-margin-right: 43px;
   --three-card-margin-top: 52px;
-  --front-end-big-dot-font-weight: 700;
+  --front-end-big-font-weight: 700;
   --read-full-text-front-end-font-size: 12px;
   --read-full-text-front-end-line-height: 14px;
   --read-full-text-font-family: "Roboto", serif;
-  --text-ago-text-dot-color: #6e6e6e;
+  --text-ago-text-color: #6e6e6e;
   --text-font-weight: 400;
   --text-margin: 0;
   --text-big-padding-left: 16px;
@@ -63,8 +63,6 @@
   --read-full-time-ago-position-margin-top: 40px;
   --position-time-ago-big-margin-left: 16px;
   --time-ago-position-display: inline-block;
-  --dot-display: block;
-  --dot-margin-top: -3.5px;
 }
 
 .container,
@@ -183,9 +181,8 @@ html {
   margin-top: var(--three-card-margin-top);
 }
 
-.front-end-big,
-.dot {
-  font-weight: var(--front-end-big-dot-font-weight);
+.front-end-big{
+  font-weight: var(--front-end-big-font-weight);
 }
 
 .read-full,
@@ -201,9 +198,8 @@ html {
 }
 
 .time_ago,
-.text,
-.dot {
-  color: var(--text-ago-text-dot-color);
+.text{
+  color: var(--text-ago-text-color);
 }
 
 .text {
@@ -250,7 +246,3 @@ html {
   display: var(--time-ago-position-display);
 }
 
-.dot {
-  display: var(--dot-display);
-  margin-top: var(--dot-margin-top);
-}
