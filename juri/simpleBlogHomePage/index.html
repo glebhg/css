@@ -6,40 +6,65 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap" rel="stylesheet">
+   </head>
   <body>
      <div class="wrapper">
-         <header>
-            <div class="logo"><img src="logo.svg" alt="logo"></div>
-            <menu>
-               <ul>
-                  <li><img src="twitter.png" alt="twitter"></li>
-                  <li>.</li>
-                  <li><img src="dribbble.png" alt="Drible"></li>
-                  <li>.</li>
-                  <li><img src="figma.png" alt="Figma"></li>
-                  <li>.</li>
-                  <li><img src="github.png" alt="GitHub"></li>
-               </ul>
+         <header class="header">
+             <a href="./"><img class="logo" src="logo.svg" alt="logo"></a>
+            <menu class="social_link">
+                <a href="https://twitter.com/"><img src="twitter.png" alt="twitter"></a>
+                &dot;
+                <a href="https://twitter.com/"><img src="dribbble.png" alt="Drible"></a>
+                &dot;
+                <a href="https://figma.com/"><img src="figma.png" alt="Figma"></a>
+                &dot;
+                <a href="https://github.com/yogahub"><img src="github.png" alt="GitHub"></a>
             </menu>
          </header>
+
          <main>
             <section> 
                <div class="wrapper_section1">
-                <img class="img_header" src="img_header.svg" alt="img">
-                <!--<div class="frontend">-->
-                  <p>Front-end.1 Hour Ago</p>
-                  <p>Optimizing CSS for faster page loads</p>
-                  <p>Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew there was still room for improvement and one of them was CSS loading. I will walk you through the process and show you how you can improve your load times as well.,</p>
-                  <p>To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...</p>
-
+                <img class="optimizing_css" src="img_header.svg" alt="Optimizing CSS for faster page loads">
+                <div class="frontend">
+                  <p>Front-end &centerdot; <span>1 Hour Ago</span></p>
+                  <h2 class="big_heading">Optimizing CSS for faster page loads</h2>
+                  <p class="big_text">Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew there was still room for improvement and one of them was CSS loading. I will walk you through the process and show you how you can improve your load times as well.,</p>
+                  <br>
+                  <p class="big_text">To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...</p>
+                  <span class="time_ago_float">3 Min Read</span>
+                  <a class="read_full_float" href="#">Read Full &#10230;</a>
                 </div>
                </div>
             </section>
-            <section>
-               <article></article>
-               <article></article>
-               <article></article>
+            <section class="tree_card">
+            <article class="first_card">
+               <img class="img_first" src="css_grid.png" alt="css Grid">
+               <p class="front_end1">Front-end &centerdot;<span class="1month_ago">1 Month Ago</span></p>
+               <h2>Css Grid</h2>
+               <p class="text_main">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+               <span class=" time_ago_float">8 Min Read</span>
+               <a class="read_full_float" href="#">Read Full &#10230;</a>
+            </article>
+            <article class="center_card">
+               <img class="img_center" src="colors_css.png" alt="color in css">
+               <p class="front_end2">Front-end &centerdot;<span class="2month_ago">2 Month Ago</span></p>
+               <h2>Colors in Css</h2>
+               <p class="text">Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties.</p>
+               <span class="time_ago_float">8 Min Read</span>
+               <a class="read_full_float" href="#">Read Full &#10230;</a>
+            </article>
+            <article class="last_card">
+               <img class="img_last" src="css_variables.png" alt="css variables">
+               <p class="front-end3">Front-end &centerdot;<span class="2month_ago">2 Month Ago</span></p>
+               <h2>Css Variables</h2>
+               <p class="text">CSS variables are custom properties that cascade normally and even inherit. They start with a reserved -- prefix, and there are no real rules about their value.</p>
+               <span class="time_ago_float">10 Min Read</span>
+               <a class="read_full_float" href="#">Read Full &#10230;</a>
+            </article>
             </section>
          </main>
       </div>
