@@ -3,39 +3,161 @@
   <head>
     <meta charset="utf-8" />
     <title>Simple Blog Home Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="blog.css" />
   </head>
   <body>
-    <header>
-      <img
-        src=""
-        alt="Simple Blog Home Page Logo"
-        title="Simple Blog Home Page Logo"
-      />
+    <header class="main">
+      <a href="/">
+        <img
+          src="images/logo.png"
+          alt="Simple Blog Home Page Logo"
+          title="Simple Blog Home Page Logo"
+        />
+      </a>
       <nav>
         <ul>
           <li>
-            <a href="https://twitter.com">
-              <img src="" alt="Twitter" title="Twitter" />
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/twitter.png" alt="Twitter" title="Twitter" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="" alt="Dribble" title="Dribble" />
+            <a
+              href="https://dribble.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/dribble.png" alt="Dribble" title="Dribble" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="" alt="Figma" title="Figma" />
+            <a
+              href="https://figma.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/figma.png" alt="Figma" title="Figma" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="" alt="Github" title="Github" />
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/github.png" alt="Github" title="Github" />
             </a>
           </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="hero-article">
+        <h2 class="hidden">Main Article</h2>
+        <article>
+          <div>
+            <img
+              src="./images/optimising.png"
+              alt="Optimizing CSS for faster page loads Image"
+              title="Optimizing CSS for faster page loads Image"
+            />
+            <h2>Optimizing CSS for faster page loads</h2>
+          </div>
+          <section>
+            <header>
+              <h4>Frontend · <time datetime="19:00">1 hour ago</time></h4>
+              <h3>Optimizing CSS for faster page loads</h3>
+            </header>
+            <p>
+              Not long ago I decided to improve the loading times of my website.
+              It already loads pretty fast, but I knew there was still room for
+              improvement and one of them was CSS loading. I will walk you
+              through the process and show you how you can improve your load
+              times as well. To see how CSS affects the load time of a webpage
+              we first have to know how the browser converts an HTML document
+              into a functional webpage...
+            </p>
+          </section>
+          <footer>
+            <p class="min-read">3 Min Read</p>
+            <a href="#" class="link">Read Full &rarr;</a>
+          </footer>
+        </article>
+      </section>
+      <section class="articles-list">
+        <h2 class="hidden">List of Articles</h2>
+        <article class="card">
+          <header>
+            <img
+              src="./images/mini.png"
+              alt="CSS Grid Article Image"
+              title="CSS Grid Article Image"
+            />
+            <h4>Frontend · <time datetime="2021-06-01">1 month ago</time></h4>
+            <h3>CSS Grid</h3>
+          </header>
+          <p>
+            The CSS Grid Layout Module offers a grid-based layout system, with
+            rows and columns, making it easier to design web pages without
+            having to use floats and positioning.
+          </p>
+          <footer>
+            <em class="min-read">12 Min Read</em>
+            <a href="#">Read Full &rarr;</a>
+          </footer>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              src="./images/colors.png"
+              alt="Colors in CSS Image"
+              title="Colors in CSS Image"
+            />
+            <h4>Frontend · <time datetime="2021-05-01">2 month ago</time></h4>
+            <h3>Colors in CSS</h3>
+          </header>
+          <p>
+            Colors play a vital role in making a web page usable or not. In CSS,
+            we can control the foreground and background color of an element
+            with the color and background properties.
+          </p>
+          <footer>
+            <em class="min-read">8 Min Read</em>
+            <a href="#">Read Full &rarr;</a>
+          </footer>
+        </article>
+        <article class="card">
+          <header>
+            <img
+              src="./images/vars.png"
+              alt="CSS Variables Image"
+              title="CSS Variables Image"
+            />
+            <h4>Frontend · <time datetime="2021-05-01">2 month ago</time></h4>
+            <h3>CSS Variables</h3>
+          </header>
+          <p>
+            CSS variables are custom properties that cascade normally and even
+            inherit. They start with a reserved – prefix, and there are no real
+            rules about their value.
+          </p>
+          <footer>
+            <em class="min-read">10 Min Read</em>
+            <a href="#">Read Full &rarr;</a>
+          </footer>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,60 @@
+:root {
+  --font-family-playfair: "Playfair Display", serif;
+  --font-family-roboto: "Roboto", sans-serif;
+  --base-line-height: 21px;
+
+  --color-black: #2c2c2c;
+  --color-black-20: #6e6e6e;
+  --color-black-30: #4b4b4b;
+  --color-blue: #1473e6;
+  --color-gray: #f5f5f5;
+
+  font-size: 14px;
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  line-height: var(--base-line-height);
+}
+
+/*--- COMMON ---*/
+body {
+  margin: 0 10% 0 10%;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+/*--- TYPOGRAPHY ---*/
+h3 {
+  font-weight: 700;
+  font-size: 1.285rem;
+  color: var(--color-black);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--color-black-30);
+}
+
+p {
+  color: var(--color-black-20);
+}
+
+.link {
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 0.857rem;
+}
+
+/*--- UTILS ---*/
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.clear {
+  clear: both;
+}
