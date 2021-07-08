@@ -11,62 +11,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap" rel="stylesheet">
    </head>
   <body>
-     <div class="wrapper">
+     
          <header class="header">
-             <a href="./"><img class="logo" src="logo.svg" alt="logo"></a>
-            <menu class="social_link">
-                <a href="https://twitter.com/"><img src="twitter.png" alt="twitter"></a>
-                &dot;
-                <a href="https://twitter.com/"><img src="dribbble.png" alt="Drible"></a>
-                &dot;
-                <a href="https://figma.com/"><img src="figma.png" alt="Figma"></a>
-                &dot;
-                <a href="https://github.com/yogahub"><img src="github.png" alt="GitHub"></a>
-            </menu>
+             <a href="/">
+             <img  
+             src="logo.svg" 
+             alt="Simple Blog Home Page Logo"
+             title="Simple Blog Home Page Logo"/>
+            </a>
+            <nav>
+               <ul>
+                <li>
+                  <a href="https://twitter.com/" target="_blank"  rel="noopener noreferrer">
+                  <img src="twitter.png" alt="twitter" title="twitter"/>
+                  </a>
+                  &dot;
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="dribbble.png" alt="Drible" title="drible"/>
+                  </a>
+                  &dot;
+                </li>
+                <li>
+                  <a href="https://figma.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="figma.png" alt="Figma" title="figma"/>
+                  </a>
+                  &dot;
+                </li>
+                <li>
+                  <a href="https://github.com/yogahub" target="_blank" rel="noopener noreferrer">
+                  <img src="github.png" alt="GitHub" title="github"/>
+                  </a>
+                </li>
+               </ul>
+            </nav>
          </header>
 
          <main>
-            <section> 
-               <div class="wrapper_section1">
-                <img class="optimizing_css" src="img_header.svg" alt="Optimizing CSS for faster page loads">
-                <div class="frontend">
-                  <p>Front-end &centerdot; <span>1 Hour Ago</span></p>
-                  <h2 class="big_heading">Optimizing CSS for faster page loads</h2>
-                  <p class="big_text">Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew there was still room for improvement and one of them was CSS loading. I will walk you through the process and show you how you can improve your load times as well.,</p>
-                  <br>
-                  <p class="big_text">To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...</p>
-                  <span class="time_ago_float">3 Min Read</span>
-                  <a class="read_full_float" href="#">Read Full &#10230;</a>
+            <section class="main-article"> 
+              <h2 class="hidden">Main Article</h2>
+              <article>
+                <div>
+                   <img src="img_header.svg" 
+                   alt="Optimizing CSS for faster page loads Image"
+                   title="Optimizing CSS for faster page loads Image"/>
+                   <h2>Optimizing CSS for faster page loads</h2>
                 </div>
-               </div>
+                <section>
+                   <header>
+                      <h4>Front-end &centerdot;  <time datetime="19:00">1 Hour Ago</time></h4>
+                      <h3>Optimizing CSS for faster page loads</h3>
+                   </header>
+                   <p> 
+                      Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew there was still room for improvement and one of them was CSS loading. I will walk you through the process and show you how you can improve your load times as well. 
+                   </p>
+                    <p> 
+                      To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...
+                    </p>
+                   <footer>
+                     <p class="min-read">3 Min Read</p>
+                     <a href="#">Read Full &#10230;</a>
+                   </footer>
+                  </section>
+               </article> 
             </section>
-            <section class="tree_card">
-            <article class="first_card">
-               <img class="img_first" src="css_grid.png" alt="css Grid">
-               <p class="front_end1">Front-end &centerdot;<span class="1month_ago">1 Month Ago</span></p>
-               <h2>Css Grid</h2>
-               <p class="text_main">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
-               <span class=" time_ago_float">8 Min Read</span>
-               <a class="read_full_float" href="#">Read Full &#10230;</a>
-            </article>
-            <article class="center_card">
-               <img class="img_center" src="colors_css.png" alt="color in css">
-               <p class="front_end2">Front-end &centerdot;<span class="2month_ago">2 Month Ago</span></p>
-               <h2>Colors in Css</h2>
-               <p class="text">Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties.</p>
-               <span class="time_ago_float">8 Min Read</span>
-               <a class="read_full_float" href="#">Read Full &#10230;</a>
-            </article>
-            <article class="last_card">
-               <img class="img_last" src="css_variables.png" alt="css variables">
-               <p class="front-end3">Front-end &centerdot;<span class="2month_ago">2 Month Ago</span></p>
-               <h2>Css Variables</h2>
-               <p class="text">CSS variables are custom properties that cascade normally and even inherit. They start with a reserved -- prefix, and there are no real rules about their value.</p>
-               <span class="time_ago_float">10 Min Read</span>
-               <a class="read_full_float" href="#">Read Full &#10230;</a>
-            </article>
+
+            <section class="article-list">
+               <h2 class="hidden">List</h2>
+               <article class="card">
+                 <header>
+                     <img src="css_grid.png" 
+                     alt="CSS Grid Article Image"
+                     title="CSS Grid Article Image"/>
+                     <h4>Front-end &centerdot; <time datetime="2021-07-08">1 Month Ago</time></h4>
+                     <h3>Css Grid</h3>
+                 </header>
+                     <p>
+                        The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+                     </p>
+                     <footer>
+                        <em class="min-read">12 Min Read</em>
+                        <a href="#">Read Full &#10230;</a>
+                     </footer>
+               </article>
+               <article class="card">
+                <header>
+                   <img  src="colors_css.png" 
+                   alt="Colors in CSS Image"
+                   title="Colors in CSS Image"/>
+                   <h4>Front-end &centerdot;<time datetime="2021-07-08" >2 Month Ago</time></h4>
+                   <h3>Colors in Css</h3>
+                </header>
+                  <p>
+                     Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties.
+                  </p>
+                  <footer>
+                   <em class="min-read">8 Min Read</em>
+                   <a href="#">Read Full &#10230;</a>
+                  </footer>
+               </article>
+               <article class="card">
+                 <header>
+                   <img  src="css_variables.png" 
+                   alt="CSS Variables Image"
+                   title="CSS Variables Image"/>
+                   <h4>Front-end &centerdot;<time datetime="2021-07-08">2 Month Ago</time></h4>
+                   <h3>Css Variables</h3>
+                 </header>
+                  <p>
+                     CSS variables are custom properties that cascade normally and even inherit. They start with a reserved -- prefix, and there are no real rules about their value.
+                  </p>
+                 <footer>
+                   <em class="min-read">10 Min Read</em>
+                   <a href="#">Read Full &#10230;</a>
+                 </footer>
+               </article>
             </section>
          </main>
-      </div>
+      
   </body>
 </html>

@@ -20,10 +20,15 @@ html{
   
 
 } 
+.header {
+  padding: 0px;
+}
 
-.ul_menu {
-  width: 200px;
-  height: 20px;
-  position: absolute;
-  padding-left: 1100px;
+a {
+  text-decoration: none;
+}
+
+
+
+
 
