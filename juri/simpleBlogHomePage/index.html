@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <title>Simple Blog Home Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap" rel="stylesheet">
+    
    </head>
   <body>
      
@@ -25,20 +24,20 @@
                   <a href="https://twitter.com/" target="_blank"  rel="noopener noreferrer">
                   <img src="twitter.png" alt="twitter" title="twitter"/>
                   </a>
-                  &dot;
                 </li>
+                &dot;
                 <li>
                   <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                   <img src="dribbble.png" alt="Drible" title="drible"/>
                   </a>
-                  &dot;
                 </li>
+                &dot;
                 <li>
                   <a href="https://figma.com/" target="_blank" rel="noopener noreferrer">
                   <img src="figma.png" alt="Figma" title="figma"/>
                   </a>
-                  &dot;
                 </li>
+                &dot;
                 <li>
                   <a href="https://github.com/yogahub" target="_blank" rel="noopener noreferrer">
                   <img src="github.png" alt="GitHub" title="github"/>
@@ -52,13 +51,11 @@
             <section class="main-article"> 
               <h2 class="hidden">Main Article</h2>
               <article>
-                <div>
-                   <img src="img_header.svg" 
-                   alt="Optimizing CSS for faster page loads Image"
-                   title="Optimizing CSS for faster page loads Image"/>
-                   <h2>Optimizing CSS for faster page loads</h2>
-                </div>
-                <section>
+                <img src="img_header.svg" 
+                alt="Optimizing CSS for faster page loads Image"
+                title="Optimizing CSS for faster page loads Image"/>
+                <h2 class="hidden">Optimizing CSS for faster page loads</h2>
+                <section class="main-article-text">
                    <header>
                       <h4>Front-end &centerdot;  <time datetime="19:00">1 Hour Ago</time></h4>
                       <h3>Optimizing CSS for faster page loads</h3>
@@ -70,14 +67,14 @@
                       To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...
                     </p>
                    <footer>
-                     <p class="min-read">3 Min Read</p>
+                     <em class="min-read">3 Min Read<em/>
                      <a href="#">Read Full &#10230;</a>
                    </footer>
                   </section>
                </article> 
             </section>
-
-            <section class="article-list">
+            <div class="clear"></div>
+            <section class="articles-list">
                <h2 class="hidden">List</h2>
                <article class="card">
                  <header>
