@@ -97,7 +97,7 @@ section.main-article {
 section.main-article img {
   display: block;
   float: left;
-  width: 100%
+  width: 100%;
   height: 280px; 
   margin: 8px 0 8px 8px;
 }
@@ -120,7 +120,7 @@ section.main-article-text header h4{
 
 section.main-article p {
   display: -webkit-box;
-  -webkit-line-clamp: 7
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
   min-height: calc(var(--line-height-base) * var(--main-article-card-lines));
@@ -130,7 +130,6 @@ section.main-article footer .min-read {
   margin: 10px 10px 10px 0;
   color: var(--color-black-20);
   font-weight: 500;
-  font-style: normal;
   font-size: 0.857rem;
   line-height: 0.666rem;
 }
@@ -183,7 +182,6 @@ article.card footer {
 article.card footer .min-read {
   color: var(--color-black-20);
   font-weight: 500;
-  font-style: normal;
   font-size: 0.857rem;
   line-height: 0.666rem;
 }
