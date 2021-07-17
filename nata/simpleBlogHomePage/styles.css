@@ -166,9 +166,23 @@ article.card .link-css {
   text-decoration: none;
 }
 
-.articles-list article.card {
-  float: left;
-  width: 30%;
+@media screen and (max-width: 360px) {
+  article.card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 361px) {
+  article.card {
+    width: 45%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  article.card {
+    width: 30%;
+    float: left;
+  }
 }
 
 .articles-list article.card {
