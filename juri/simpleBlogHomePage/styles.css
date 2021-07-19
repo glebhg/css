@@ -22,7 +22,8 @@
 
 /*--COMMON--*/
 body {
-margin: 10px 10% 35px 10%;
+ width: 90%;
+ margin: 10px 10% 35px 10%;
 }
 
 ul {
@@ -97,7 +98,7 @@ section.main-article {
 section.main-article img {
   display: block;
   float: left;
-  width: 100%;
+  width: 45%;
   height: 280px; 
   margin: 8px 0 8px 8px;
 }
@@ -206,3 +207,55 @@ article.card footer a {
 .articles-list article.card:nth-child(3) {
   margin: 0 4.5%;
 }
+
+/*--RESPONSIVE--*/
+
+@media screen and (min-width: 550px) {
+   body {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+} 
+
+
+@media screen and (min-width: 1440px) {
+  body {
+   width: 90%;
+   margin: 0 auto;
+  
+ }
+ p {
+  font-size: 1.3rem;
+ }
+
+} 
+
+
+
+
+@media screen and (max-width: 850px) {
+  .articles-list article.card {
+    
+    float: left;
+    width: 100%;
+    margin: 25px 0 35px;
+  }
+
+  .articles-list article.card:nth-child(3) {
+    margin: 0 4.5%;
+  }
+  section.main-article img {
+    display: block;
+    
+    width: 98%;
+    height: 280px; 
+    margin: 5px  0;
+  }
+
+  section.main-article-text {
+    margin: 10px 15px;
+    float: right;
+    width: 95%;
+  }
