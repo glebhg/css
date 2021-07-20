@@ -166,21 +166,19 @@ article.card .link-css {
   text-decoration: none;
 }
 
-@media screen and (max-width: 360px) {
-  article.card {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 361px) {
-  article.card {
-    width: 45%;
-    float: left;
-  }
+article.card {
+  width: 30%;
+  float: left;
 }
 
-@media screen and (min-width: 992px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   article.card {
-    width: 30%;
+    width: 45%;
+  }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  article.card {
+    width: 100%;
     float: left;
   }
 }
