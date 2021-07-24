@@ -29,7 +29,7 @@ ul {
 h2 {
   font-family: var(--font-family-roboto);
   font-size: 1.5714rem;
-  line-height: 1.238rem;
+  line-height: calc(1.5 * var(--line-height-base));
   font-weight: 900;
   color: var(--color-black);
 }
@@ -71,11 +71,7 @@ header.main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header.main {
-  padding: 10px;
-  clear: both;
+  padding-top: 10px;
 }
 
 header.main nav ul li {
@@ -104,16 +100,11 @@ article.big-card section {
 
 section.main-article-picture img {
   display: block;
+  width: 100%;
 }
 
 section.main-article .main-article-text {
   width: 45%;
-}
-
-@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  section.main-article .main-article-text {
-    width: 90%;
-  }
 }
 
 section.main-article p {
@@ -135,7 +126,6 @@ section.main-article footer {
 
 section.main-article .link-css {
   display: block;
-  float: right;
   text-decoration: none;
 }
 
@@ -144,6 +134,7 @@ section.main-article .link-css {
 .articles-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 article.card {
@@ -180,27 +171,11 @@ article.card footer {
 
 article.card .link-css {
   display: block;
-  float: right;
   text-decoration: none;
 }
 
 article.card {
   width: 30%;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  article.card {
-    width: 45%;
-  }
-}
-@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  article.card {
-    width: 100%;
-  }
-}
-
-.articles-list article.card {
-  margin-right: 4%;
 }
 
 .articles-list article.card:last-of-type {
@@ -213,8 +188,4 @@ article.card {
   position: absolute;
   top: -9999px;
   left: -9999px;
-}
-
-.clear {
-  clear: both;
 }
