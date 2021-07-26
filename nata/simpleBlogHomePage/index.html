@@ -7,7 +7,6 @@
       content="width=device-width,initial-scale=1"
     />
     <title>Simple Blog Home Page</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +14,11 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
 
   <body>
@@ -69,15 +70,16 @@
     <main>
       <section class="main-article">
         <h2 class="hidden">Main Article</h2>
-        <article>
-          <img
-            src="./img/optimizing.png"
-            alt="Optimizing CSS for faster
+        <article class="big-card">
+          <section class="main-article-picture">
+            <img
+              src="./img/optimizing.png"
+              alt="Optimizing CSS for faster
                        page loads Image"
-            title="Optimizing CSS for faster
+              title="Optimizing CSS for faster
                        page loads Image"
-          />
-          <h2 class="hidden">Optimizing CSS for faster page loads</h2>
+            />
+          </section>
           <section class="main-article-text">
             <header>
               <h4>
@@ -101,7 +103,6 @@
           </section>
         </article>
       </section>
-      <div class="clear"></div>
       <section class="articles-list">
         <h2 class="hidden">List of Articles</h2>
         <article class="card">
@@ -178,7 +179,6 @@
             <a href="#" class="link-css">Read Full &#10230;</a>
           </footer>
         </article>
-        <div class="clear"></div>
       </section>
     </main>
   </body>

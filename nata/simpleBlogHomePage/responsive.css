@@ -1,0 +1,33 @@
+/*-- Mobile --*/
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  body {
+    margin: 0px 5% 0 5%;
+  }
+  /*-- Article Card --*/
+  article.card {
+    width: 100%;
+  }
+
+  /*-- Main Article --*/
+  section.main-article .main-article-text {
+    width: 90%;
+  }
+}
+
+/*-- iPad --*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    margin: 0px 5% 0 5%;
+  }
+
+  article.card {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .big-card {
+    flex-flow: initial;
+    align-items: normal;
+  }
+}
