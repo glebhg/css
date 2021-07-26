@@ -66,11 +66,6 @@ p {
 
 /*--HEADER--*/
 
-header.header {
-  padding: 5px;
-  clear: both;
-}
-
 header.header nav {
   float: right;
   padding: 17px 0px;
