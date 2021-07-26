@@ -122,6 +122,8 @@ section.main-article header {
 
 section.main-article footer {
   margin: 10px 10px 10px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 section.main-article .link-css {
@@ -167,6 +169,8 @@ article.card p {
 
 article.card footer {
   margin: 0 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 article.card .link-css {
