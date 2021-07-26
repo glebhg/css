@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Simple Blog Home Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -49,11 +50,11 @@
          <main>
             <section class="main-article"> 
               <h2 class="hidden">Main Article</h2>
-              <article>
-                <img src="img_header.svg" 
+              <article class="bg-card">
+                <div class="img-main-article" 
                 alt="Optimizing CSS for faster page loads Image"
                 title="Optimizing CSS for faster page loads Image"/>
-                <h2 class="hidden">Optimizing CSS for faster page loads</h2>
+                </div>
                 <section class="main-article-text">
                    <header>
                       <h4>Front-end &centerdot;  <time datetime="19:00">1 Hour Ago</time></h4>
@@ -124,6 +125,7 @@
                  </footer>
                </article>
             </section>
+            <div class="clear"></div>
          </main>
       
   </body>

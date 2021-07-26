@@ -1,0 +1,19 @@
+/*--RESPONSIVE--*/
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .articles-list article.card,
+    section.main-article .img-main-article,
+    section.main-article-text {
+      width: 100%;
+    }
+  }
+  
+  
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .articles-list article.card {
+      width: 45%;
+    }
+    .articles-list article.card:nth-last-of-type(2) {
+      margin-right: 0;
+    }
+  }
+  
