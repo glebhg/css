@@ -19,9 +19,8 @@
 
 /*--COMMON--*/
 body {
-
- width: 90%;
- margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 ul {
@@ -30,6 +29,11 @@ ul {
 }
 
 /*--TYPOGRAPHY--*/
+h2 {
+  font-family: var(--font-family-playfair);
+  line-height: calc(var(--base-line-height) * 2.285);
+  font-size: 2.571rem;
+}
 
 h3 {
   font-weight: 700;
@@ -58,10 +62,6 @@ p {
   position: absolute;
   top: -9999px;
   left: -9999px;
-}
-
-.clear {
-  clear: both;
 }
 
 /*--HEADER--*/
@@ -93,12 +93,18 @@ section.main-article {
 }
 
 section.main-article .img-main-article {
-  background: orange url(img_header.svg) no-repeat;
+  position: relative;
+  background: orange url(img_header_background.svg) no-repeat;
   background-size: cover;
-  
   width: 45%;
   height: 300px;
-  margin: 8px 0 8px 8px
+  margin: 8px;
+}
+
+section.main-article .img-main-article h2 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
 
 section.main-article-text {
@@ -205,3 +211,4 @@ article.card footer a {
 
 .articles-list article.card {
   width: 30%;
+}
