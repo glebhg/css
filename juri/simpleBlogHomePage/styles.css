@@ -29,6 +29,11 @@ ul {
 }
 
 /*--TYPOGRAPHY--*/
+h2 {
+  font-family: var(--font-family-playfair);
+  line-height: calc(var(--base-line-height) * 2.285);
+  font-size: 2.571rem;
+}
 
 h3 {
   font-weight: 700;
@@ -59,10 +64,6 @@ p {
   left: -9999px;
 }
 
-.clear {
-  clear: both;
-}
-
 /*--HEADER--*/
 
 header.header nav {
@@ -76,6 +77,13 @@ header.header nav ul li {
 }
 
 /*--MAIN ARTICLE--*/
+.bg-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 section.main-article {
   border: 1px solid;
@@ -85,18 +93,25 @@ section.main-article {
 }
 
 section.main-article .img-main-article {
-  background: orange url(img_header.svg) no-repeat;
+  position: relative;
+  background: orange url(img_header_background.svg) no-repeat;
   background-size: cover;
-  float: left;
   width: 45%;
-  height: 280px;
-  margin: 8px 0 8px 8px
+  height: 300px;
+  margin: 8px;
+}
+
+section.main-article .img-main-article h2 {
+  color: var(--color-white);
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
 
 section.main-article-text {
   margin: 10px 15px 15px 15px;
   float: right;
-  width: 50%;
+  width: 45%;
 }
 
 section.main-article-text header time {
@@ -134,9 +149,17 @@ section.main-article footer a {
 }
 
 /*--ARTICLE CARD--*/
+.articles-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 article.card {
   border: 1px solid var(--color-border-gray);
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 article.card header {
@@ -188,34 +211,5 @@ article.card footer a {
 /*--article list--*/
 
 .articles-list article.card {
-  float: left;
   width: 30%;
-  margin: 0 0 35px;
-}
-
-.articles-list article.card {
-  margin-right: 4.5%;
-}
-
-.articles-list article.card:last-child {
-  margin-right: 0;
-}
-
-/*--RESPONSIVE--*/
-@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .articles-list article.card,
-  section.main-article .img-main-article,
-  section.main-article-text {
-    width: 100%;
-  }
-}
-
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .articles-list article.card {
-    width: 45%;
-  }
-  .articles-list article.card:nth-last-of-type(2) {
-    margin-right: 0;
-  }
 }
