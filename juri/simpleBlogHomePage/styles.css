@@ -102,6 +102,7 @@ section.main-article .img-main-article {
 }
 
 section.main-article .img-main-article h2 {
+  color: var(--color-white);
   position: absolute;
   bottom: 15px;
   left: 15px;
